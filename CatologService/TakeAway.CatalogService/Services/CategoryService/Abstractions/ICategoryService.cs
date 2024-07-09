@@ -2,7 +2,7 @@
 
 namespace TakeAway.CatalogService.Services.CategoryService.Abstractions;
 
-public interface ICatgoryService
+public interface ICategoryService
 {
     Task<List<ResultCategoryDto>> GetAllCategoryAsync();
     Task CreateCategoryAsync(CreateCategoryDto createCategoryDto);
