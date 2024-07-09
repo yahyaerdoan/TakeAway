@@ -15,11 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\CategoryService\Concretions\" />
-    <Folder Include="Services\DailyDiscountService\Concretions\" />
-    <Folder Include="Services\ProductService\Concretions\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Services\SliderService\Concretions\" />
   </ItemGroup>
 
 </Project>
