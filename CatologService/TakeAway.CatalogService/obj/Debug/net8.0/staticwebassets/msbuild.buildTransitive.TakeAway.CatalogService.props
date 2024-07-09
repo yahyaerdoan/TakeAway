@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TakeAway.CatalogService.props" />
-</Project>
