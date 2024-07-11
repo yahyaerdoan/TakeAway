@@ -1,4 +1,5 @@
-﻿using TakeAway.CatalogService.Dtos.CategoryDtos;
+﻿using MongoDB.Bson;
+using TakeAway.CatalogService.Dtos.CategoryDtos;
 
 namespace TakeAway.CatalogService.Services.CategoryService.Abstractions;
 

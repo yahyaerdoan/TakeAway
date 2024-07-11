@@ -1,10 +1,13 @@
 ﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace TakeAway.CatalogService.Entities;
 
 public class DailyDiscount
 {
-    public ObjectId Id { get; set; }
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
     public string MainTitle { get; set; }
     public string SubTitle { get; set; }
     public string LongDescription { get; set; }
