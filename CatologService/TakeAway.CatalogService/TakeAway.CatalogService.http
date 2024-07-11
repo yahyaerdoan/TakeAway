@@ -1,6 +1,6 @@
-@TakeAway.CatalogService_HostAddress = http://localhost:5073
+@TakeAway.CatalogService_HostAddress = http://localhost:7265
 
-GET {{TakeAway.CatalogService_HostAddress}}/weatherforecast/
+GET {{TakeAway.CatalogService_HostAddress}}/api/products
 Accept: application/json
 
 ###
