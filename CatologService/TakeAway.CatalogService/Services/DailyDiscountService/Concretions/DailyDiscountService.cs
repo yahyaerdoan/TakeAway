@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using MongoDB.Bson;
 using MongoDB.Driver;
 using TakeAway.CatalogService.Dtos.DailyDiscountDtos;
 using TakeAway.CatalogService.Entities;
@@ -8,16 +7,10 @@ using TakeAway.CatalogService.Settings.DbContexts;
 
 namespace TakeAway.CatalogService.Services.DailyDiscountService.Concretions;
 
-public class DailyDiscountService : IDailyDiscountService
+public class DailyDiscountService(ICatologServiceMongoDbContext dbContext, IMapper mapper) : IDailyDiscountService
 {
-    private readonly ICatologServiceMongoDbContext _dbContext;
-    private readonly IMapper _mapper;
-
-    public DailyDiscountService(ICatologServiceMongoDbContext dbContext, IMapper mapper)
-    {
-        _dbContext = dbContext;
-        _mapper = mapper;
-    }
+    private readonly ICatologServiceMongoDbContext _dbContext = dbContext;
+    private readonly IMapper _mapper = mapper;
 
     public async Task CreateDailyDiscountAsync(CreateDailyDiscountDto createDailyDiscountDto)
     {
