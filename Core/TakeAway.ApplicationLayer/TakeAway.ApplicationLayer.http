@@ -1,0 +1,6 @@
+@TakeAway.ApplicationLayer_HostAddress = http://localhost:5093
+
+GET {{TakeAway.ApplicationLayer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
