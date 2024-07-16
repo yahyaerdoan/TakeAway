@@ -20,8 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
-    <ProjectReference Include="..\..\..\..\Core\TakeAway.DomainLayer\TakeAway.DomainLayer.csproj" />
+    <ProjectReference Include="..\..\..\..\OrderService\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
   </ItemGroup>
+
+
 
 </Project>

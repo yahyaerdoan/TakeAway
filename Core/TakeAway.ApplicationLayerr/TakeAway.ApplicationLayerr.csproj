@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TakeAway.DomainLayer\TakeAway.DomainLayer.csproj" />
+    <ProjectReference Include="..\TakeAway.DomainLayer\TakeAway.DomainLayerr.csproj" />
   </ItemGroup>
 
 </Project>
