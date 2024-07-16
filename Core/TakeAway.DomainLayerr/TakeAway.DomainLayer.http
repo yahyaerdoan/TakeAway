@@ -1,6 +1,0 @@
-@TakeAway.DomainLayer_HostAddress = http://localhost:5032
-
-GET {{TakeAway.DomainLayer_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
