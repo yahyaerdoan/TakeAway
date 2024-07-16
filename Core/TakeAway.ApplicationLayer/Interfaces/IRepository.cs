@@ -8,6 +8,6 @@ public interface IRepository<T> where T : class
     Task UpdateAsync(T entity);
     Task DeleteAsync(int id);
     Task<T> GetByIdAsync(int id);
-    Task<List<T>> GetAsync(T entity);
+    Task<List<T>> GetAsync();
     Task<T> GetByFilterAsync(Expression<Func<T, bool>> expression);
 }

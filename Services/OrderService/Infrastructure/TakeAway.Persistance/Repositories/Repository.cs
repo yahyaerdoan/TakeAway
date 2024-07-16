@@ -28,7 +28,7 @@ public class Repository<T>(OrderContext  context) : IRepository<T> where T : cla
         await context.SaveChangesAsync();
     }
 
-    public async Task<List<T>> GetAsync(T entity)
+    public async Task<List<T>> GetAsync()
     {
         return await context.Set<T>().ToListAsync();
     }
