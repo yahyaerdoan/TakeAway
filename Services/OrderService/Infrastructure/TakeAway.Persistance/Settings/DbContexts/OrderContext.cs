@@ -12,7 +12,7 @@ public class OrderContext : DbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=localhost,1440; Database=TakeAwayOrderServiceDb; Trusted_Connection=true; TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=YAHYAERDOGAN; Database=TakeAwayOrderServiceDb; Trusted_Connection=true; TrustServerCertificate=True;");
     }
     public DbSet<Address> Addresses { get; set; }
     public DbSet<Order> Orders { get; set; }
