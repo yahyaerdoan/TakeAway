@@ -13,9 +13,13 @@ public class GetAddressQueryHandler(IRepository<Address> repository)
         var values = await repository.GetAsync();
         return values.Select(x=> new GetAddressQueryResult{
             Id = x.Id,
+            UserId = x.UserId,
             Name = x.Name,
             Surname = x.Surname,
             Email = x.Email,
+            City = x.City,
+            District = x.District,
+            Detail = x.Detail,
         }).ToList();
     }
 }

@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\..\OrderService\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
     <ProjectReference Include="..\..\Infrastructure\TakeAway.Persistance\TakeAway.PersistanceLayer.csproj" />
   </ItemGroup>

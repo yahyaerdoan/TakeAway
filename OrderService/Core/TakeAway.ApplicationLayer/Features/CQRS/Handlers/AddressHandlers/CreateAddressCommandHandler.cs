@@ -15,6 +15,11 @@ public class CreateAddressCommandHandler(IRepository<Address> repository)
             UserId = command.UserId,
             Name = command.Name,
             Surname = command.Surname,
+            City = command.City,
+            District = command.District,
+            Email = command.Email,
+            Detail = command.Detail,        
+            
         });      
     }
 }

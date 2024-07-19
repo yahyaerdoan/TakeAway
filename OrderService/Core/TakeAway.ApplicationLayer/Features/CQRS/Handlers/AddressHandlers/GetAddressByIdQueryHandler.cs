@@ -17,7 +17,11 @@ public class GetAddressByIdQueryHandler(IRepository<Address> addressRepository)
             Id = values.Id,
             UserId = values.UserId,
             Name = values.Name,
+            Surname = values.Surname,
             Email = values.Email,
+            City = values.City,
+            District = values.District,
+            Detail = values.Detail
         };
     }
 }

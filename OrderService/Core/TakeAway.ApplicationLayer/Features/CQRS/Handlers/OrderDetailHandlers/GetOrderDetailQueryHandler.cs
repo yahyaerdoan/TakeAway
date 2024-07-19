@@ -19,7 +19,7 @@ public class GetOrderDetailQueryHandler(IRepository<OrderDetail> repository)
             ProductId = x.ProductId,
             Amount = x.Amount,
             OrderId = x.OrderId,
-            Price = x.Price,
+            Price = x.Price
 
         }).ToList();
     }

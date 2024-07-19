@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using TakeAway.DomainLayer.Entities;
 
@@ -14,6 +15,5 @@ public class CreateOrderDetailCommand
     public decimal Price { get; set; }
     public int Amount { get; set; }
     public decimal TotalPrice { get; set; }
-    public int OrderId { get; set; }
-    public Order Order { get; set; }
+    public int OrderId { get; set; }  
 }
