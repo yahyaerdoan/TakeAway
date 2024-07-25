@@ -1,0 +1,6 @@
+@TakeAway.BasketService_HostAddress = http://localhost:5141
+
+GET {{TakeAway.BasketService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
