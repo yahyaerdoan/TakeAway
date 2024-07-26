@@ -43,7 +43,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway.IdentityServer", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway.OrderPresentationLayer", "Services\OrderService\Presentation\TakeAway.OrderPresentationLayer\TakeAway.OrderPresentationLayer.csproj", "{22B3C0C1-FDFC-4558-879F-CE08FAA2EB61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAway.BasketService", "Services\BasketService\TakeAway.BasketService\TakeAway.BasketService.csproj", "{A5C06C6B-B4FA-48F7-890E-28436D08D1B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway.BasketService", "Services\BasketService\TakeAway.BasketService\TakeAway.BasketService.csproj", "{A5C06C6B-B4FA-48F7-890E-28436D08D1B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
