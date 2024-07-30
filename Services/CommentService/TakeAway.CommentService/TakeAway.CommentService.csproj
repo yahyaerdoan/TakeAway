@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="DataAccessLayer\" />
     <Folder Include="Dtos\" />
     <Folder Include="Mappings\" />
     <Folder Include="Services\" />
