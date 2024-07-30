@@ -1,6 +1,6 @@
-﻿namespace TakeAway.CommentService.DataAccessLayer.Entities;
+﻿namespace TakeAway.CommentService.Dtos;
 
-public class Comment
+public class UpdateCommentDto
 {
     public int Id { get; set; }
     public string? Name { get; set; }
@@ -9,5 +9,5 @@ public class Comment
     public DateTime CreatedDate { get; set; }
     public string? CommentDetail { get; set; }
     public bool Status { get; set; }
-    public string? ProductId { get; set; }    
+    public string? ProductId { get; set; }
 }
