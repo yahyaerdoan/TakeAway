@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using TakeAway.CatalogService.Services.CategoryService.Abstractions;
 using TakeAway.CatalogService.Services.CategoryService.Concretions;
@@ -13,6 +14,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.Authority = builder.Configuration["IdentityServerUrl"];
+    opt.Audience = "ResourceCatalog1";
+    opt.RequireHttpsMetadata = false;
+});
 
 builder.Services.Configure<CatologServiceMongoDbSettings>(
     builder.Configuration.GetSection("MongoDbSettings"));
@@ -45,6 +53,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

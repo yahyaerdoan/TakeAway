@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TakeAway.CatalogService.Dtos.ProductDto;
 using TakeAway.CatalogService.Services.ProductService.Abstractions;
 
 namespace TakeAway.CatalogService.Controllers;
 
+//[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class ProductsController(IProductService productService) : ControllerBase

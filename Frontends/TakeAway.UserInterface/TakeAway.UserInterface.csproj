@@ -13,8 +13,8 @@
   <ItemGroup>
     <Folder Include="Handlers\" />
     <Folder Include="Settings\" />
-    <Folder Include="Services\" />
     <Folder Include="Resources\" />
+    <Folder Include="Views\Shared\Components\" />
   </ItemGroup>
 
 </Project>
