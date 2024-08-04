@@ -16,8 +16,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TakeAway.IdentityServer.Quickstart.Consent;
 
-namespace IdentityServerHost.Quickstart.UI
+namespace TakeAway.IdentityServer.Quickstart.Device
 {
     [Authorize]
     [SecurityHeaders]
