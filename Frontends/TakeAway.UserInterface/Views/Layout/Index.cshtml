@@ -19,45 +19,7 @@
     @await Component.InvokeAsync("NavbarViewComponentPartial")
     <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    @await Component.InvokeAsync("ModalSearchViewComponentPartial")
-    <!-- Modal Search End -->
-
-    <!-- Hero Start -->
-    @await Component.InvokeAsync("HeroViewComponentPartial")
-    <!-- Hero End -->
-
-    <!-- Featurs Section Start -->
-    @await Component.InvokeAsync("FeatursSectionViewComponentPartial")
-    <!-- Featurs Section End -->
-
-    <!-- Fruits Shop Start-->
-    @await Component.InvokeAsync("FruitsShopViewComponentPartial")
-    <!-- Fruits Shop End-->
-
-    <!-- Featurs Start -->
-    @await Component.InvokeAsync("FeatursViewComponentPartial")
-    <!-- Featurs End -->
-
-    <!-- Vesitable Shop Start-->
-    @await Component.InvokeAsync("VesitableShopViewComponentPartial")
-    <!-- Vesitable Shop End -->
-
-    <!-- Banner Section Start-->
-    @await Component.InvokeAsync("BannerSectionViewComponentPartial")
-    <!-- Banner Section End -->
-
-    <!-- BestSeller Product Start -->
-    @await Component.InvokeAsync("BestSellerProductViewComponentPartial")
-    <!-- BestSeller Product End -->
-
-    <!-- Fact Start -->
-    @await Component.InvokeAsync("FactViewComponentPartial")
-    <!-- Fact Start -->
-
-    <!-- Tastimonial Start -->
-    @await Component.InvokeAsync("TestimonialViewComponentPartial")
-    <!-- Tastimonial End -->
+    @RenderBody()
 
     <!-- Footer Start -->
     @await Component.InvokeAsync("FooterViewComponentPartial")

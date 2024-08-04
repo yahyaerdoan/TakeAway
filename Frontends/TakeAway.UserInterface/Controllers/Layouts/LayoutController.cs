@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace TakeAway.UserInterface.Controllers.Layouts
+namespace TakeAway.UserInterface.Controllers.Layouts;
+
+public class LayoutController : Controller
 {
-    public class LayoutController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        return View();
     }
 }

@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Handlers\" />
+    <Folder Include="Models\" />
     <Folder Include="Settings\" />
     <Folder Include="Resources\" />
   </ItemGroup>
