@@ -1,6 +1,11 @@
-﻿namespace TakeAway.UserInterface.ViewComponents.LayoutViewComponents
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace TakeAway.UserInterface.ViewComponents.LayoutViewComponents;
+
+public class FeatursViewComponentPartial : ViewComponent
 {
-    public class FeatursViewComponentPartial
+    public async Task<IViewComponentResult> InvokeAsync()
     {
+        return View();
     }
 }

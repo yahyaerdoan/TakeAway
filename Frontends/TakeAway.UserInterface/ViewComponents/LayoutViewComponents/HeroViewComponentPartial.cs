@@ -1,6 +1,11 @@
-﻿namespace TakeAway.UserInterface.ViewComponents.LayoutViewComponents
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace TakeAway.UserInterface.ViewComponents.LayoutViewComponents;
+
+public class HeroViewComponentPartial : ViewComponent
 {
-    public class HeroViewComponentPartial
+    public async Task<IViewComponentResult> InvokeAsync()
     {
+        return View();
     }
 }
