@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\OrderService\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
+    <ProjectReference Include="..\..\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
     <ProjectReference Include="..\..\Infrastructure\TakeAway.Persistance\TakeAway.PersistanceLayer.csproj" />
   </ItemGroup>
 

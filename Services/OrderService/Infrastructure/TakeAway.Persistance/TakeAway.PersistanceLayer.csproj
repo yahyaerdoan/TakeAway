@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\OrderService\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
+    <ProjectReference Include="..\..\Core\TakeAway.ApplicationLayer\TakeAway.ApplicationLayer.csproj" />
   </ItemGroup>
 
 
