@@ -7,12 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\a\**" />
+    <Content Remove="Models\a\**" />
+    <EmbeddedResource Remove="Models\a\**" />
+    <None Remove="Models\a\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Handlers\" />
-    <Folder Include="Models\" />
     <Folder Include="Settings\" />
     <Folder Include="Resources\" />
   </ItemGroup>

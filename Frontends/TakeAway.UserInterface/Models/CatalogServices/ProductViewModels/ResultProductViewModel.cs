@@ -1,6 +1,6 @@
-﻿namespace TakeAway.UserInterface.Dtos.CatalogServices.ProductDtos;
+﻿namespace TakeAway.UserInterface.Models.CatalogServices.ProductViewModels;
 
-public class ResultProductDto
+public class ResultProductViewModel
 {
     public string Id { get; set; }
     public string Name { get; set; }

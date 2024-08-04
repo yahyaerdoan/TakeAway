@@ -1,8 +1,8 @@
-﻿using TakeAway.UserInterface.Dtos.CatalogServices.ProductDtos;
+﻿using TakeAway.UserInterface.Models.CatalogServices.ProductViewModels;
 
 namespace TakeAway.UserInterface.Services.Abstractions.Productservices;
 
 public interface IProductService
 {
-    Task<List<ResultProductDto>> GetAllProductsAsync();
+    Task<List<ResultProductViewModel>> GetAllProductsAsync();
 }
