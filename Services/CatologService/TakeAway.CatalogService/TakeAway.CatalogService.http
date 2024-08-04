@@ -1,0 +1,18 @@
+@TakeAway.CatalogService_HostAddress = https://localhost:6001
+
+GET {{TakeAway.CatalogService_HostAddress}}/api/products
+Accept: application/json
+
+###
+
+GET {{TakeAway.CatalogService_HostAddress}}/api/categories
+
+###
+
+GET {{TakeAway.CatalogService_HostAddress}}/api/categories/string
+
+###
+
+GET {{TakeAway.CatalogService_HostAddress}}/api/products
+
+###
