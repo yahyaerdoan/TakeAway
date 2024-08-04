@@ -1,7 +1,7 @@
 using System;
 using IdentityServer4.Models;
-using IdentityServerHost.Quickstart.UI;
 using Microsoft.AspNetCore.Mvc;
+using TakeAway.IdentityServer.Quickstart.Account;
 
 namespace TakeAway.IdentityServer.Quickstart
 {
