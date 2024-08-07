@@ -1,4 +1,6 @@
+using TakeAway.UserInterface.Services.Abstractions.IdentityServices;
 using TakeAway.UserInterface.Services.Abstractions.Productservices;
+using TakeAway.UserInterface.Services.Concretions.IdentityServices;
 using TakeAway.UserInterface.Services.Concretions.ProductServices;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IIdentityService, IdentityService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
