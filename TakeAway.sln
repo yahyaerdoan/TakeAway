@@ -49,6 +49,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway.ApplicationLayer",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway.DomainLayer", "Services\OrderService\Core\TakeAway.DomainLayer\TakeAway.DomainLayer.csproj", "{59713638-2372-46EC-865A-829F74027EB6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRService", "SignalRService", "{946153F5-8E1B-4C04-A33E-7C77312B7DCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAway.SignalRService", "Services\SignalRService\TakeAway.SignalRService\TakeAway.SignalRService.csproj", "{6605962F-4965-4272-B187-F8599A2BC448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,10 @@ Global
 		{59713638-2372-46EC-865A-829F74027EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59713638-2372-46EC-865A-829F74027EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59713638-2372-46EC-865A-829F74027EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6605962F-4965-4272-B187-F8599A2BC448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6605962F-4965-4272-B187-F8599A2BC448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6605962F-4965-4272-B187-F8599A2BC448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6605962F-4965-4272-B187-F8599A2BC448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +128,8 @@ Global
 		{42A91C2C-C90C-49B9-B0A6-BEBA3F6B6A31} = {73237AC1-6220-4CE2-970B-18EEB0BD6D4D}
 		{82AFA640-120E-47CF-86E8-B89B9E3D5804} = {959E7EC8-E5C4-4DBD-8A96-B8B6205A9F4F}
 		{59713638-2372-46EC-865A-829F74027EB6} = {959E7EC8-E5C4-4DBD-8A96-B8B6205A9F4F}
+		{946153F5-8E1B-4C04-A33E-7C77312B7DCA} = {FE8F5352-F6AD-4759-840C-F575529353A8}
+		{6605962F-4965-4272-B187-F8599A2BC448} = {946153F5-8E1B-4C04-A33E-7C77312B7DCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D914177-1FA7-486C-8F71-8B8C2EA1FB40}

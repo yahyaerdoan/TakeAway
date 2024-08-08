@@ -1,0 +1,6 @@
+@TakeAway.SignalRService_HostAddress = http://localhost:5113
+
+GET {{TakeAway.SignalRService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
