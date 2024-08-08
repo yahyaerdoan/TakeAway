@@ -53,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRService", "SignalRSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAway.SignalRService", "Services\SignalRService\TakeAway.SignalRService\TakeAway.SignalRService.csproj", "{6605962F-4965-4272-B187-F8599A2BC448}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAway.SignalRUserInterface", "Services\SignalRService\TakeAway.SignalRUserInterface\TakeAway.SignalRUserInterface.csproj", "{5D386F5B-981F-4A0A-98DB-9D873A8B8361}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,10 @@ Global
 		{6605962F-4965-4272-B187-F8599A2BC448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6605962F-4965-4272-B187-F8599A2BC448}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6605962F-4965-4272-B187-F8599A2BC448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D386F5B-981F-4A0A-98DB-9D873A8B8361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D386F5B-981F-4A0A-98DB-9D873A8B8361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D386F5B-981F-4A0A-98DB-9D873A8B8361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D386F5B-981F-4A0A-98DB-9D873A8B8361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +136,7 @@ Global
 		{59713638-2372-46EC-865A-829F74027EB6} = {959E7EC8-E5C4-4DBD-8A96-B8B6205A9F4F}
 		{946153F5-8E1B-4C04-A33E-7C77312B7DCA} = {FE8F5352-F6AD-4759-840C-F575529353A8}
 		{6605962F-4965-4272-B187-F8599A2BC448} = {946153F5-8E1B-4C04-A33E-7C77312B7DCA}
+		{5D386F5B-981F-4A0A-98DB-9D873A8B8361} = {946153F5-8E1B-4C04-A33E-7C77312B7DCA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D914177-1FA7-486C-8F71-8B8C2EA1FB40}
