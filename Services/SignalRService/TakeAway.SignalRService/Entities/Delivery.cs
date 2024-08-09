@@ -8,4 +8,5 @@ public class Delivery
     public DateTime? Created { get; set; } = DateTime.Now;
     public string? City { get; set; }
     public string? Address { get; set; }
+    public decimal TotalPrice { get; set; }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TakeAway.SignalRService.Settings.DbContexts;
 
@@ -11,9 +12,11 @@ using TakeAway.SignalRService.Settings.DbContexts;
 namespace TakeAway.SignalRService.Migrations
 {
     [DbContext(typeof(SignalRServiceDeliveryMsSqlDbContext))]
-    partial class SignalRServiceDeliveryMsSqlDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240809041913_AddedNewProperty")]
+    partial class AddedNewProperty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

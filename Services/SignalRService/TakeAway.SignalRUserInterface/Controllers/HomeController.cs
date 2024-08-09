@@ -4,29 +4,22 @@ using TakeAway.SignalRUserInterface.Models;
 
 namespace TakeAway.SignalRUserInterface.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(IHttpClientFactory httpClientFactory) : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IHttpClientFactory _httpClientFactory = httpClientFactory;
 
-        public HomeController(ILogger<HomeController> logger)
+        public async Task<IActionResult> Index()
         {
-            _logger = logger;
-        }
+            var client1 = _httpClientFactory.CreateClient();
+            var responsemessage1 = await client1.GetAsync("https://localhost:7189/api/Deliveries/GetTotalPrice");
+            var jsonData1 = await responsemessage1.Content.ReadAsStringAsync();
+            ViewBag.Message1 = jsonData1;
 
-        public IActionResult Index()
-        {
+            var client2 = _httpClientFactory.CreateClient();
+            var responsemessage2 = await client2.GetAsync("https://localhost:7189/api/Deliveries/GetTotalDelivery");
+            var jsonData2 = await responsemessage2.Content.ReadAsStringAsync();
+            ViewBag.Message2 = jsonData2;
             return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
