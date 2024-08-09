@@ -3,6 +3,10 @@ using TakeAway.SignalRService.Settings.DbContexts;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
+{
+    builder.AllowAnyHeader().AllowAnyMethod().SetIsOriginAllowed((host) => true).AllowCredentials();
+}));
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<SignalRServiceDeliveryMsSqlDbContext>();
@@ -19,6 +23,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
