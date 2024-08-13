@@ -3,7 +3,7 @@
 }
 <h1>@ViewBag.Message1</h1>
 <h1>@ViewBag.Message2</h1>
-@section Scripts{
+@section Scripts {
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
     <div class="container-fluid">
         <div class="row">
@@ -14,7 +14,13 @@
                         $("#constatus").text(connection.state);
                         connection.start().then(() => {
                             $("#constatus").text(connection.state);
+                            setInterval(() => {
+                                connection.invoke("SendStatistics");
+                            }, 1000);
                         }).catch((error) => { console.log(error) });
+                        connection.on("ReceiveStatusOnTheWayCount", (TheWayCount) => {
+                            $("#StatusOnTheWayCount").text(TheWayCount);
+                        });
                     })
                 </script>
             </div>
@@ -25,5 +31,8 @@
 <div class="col-md-8 offset-2">
     <div class="alert alert-primary">
         Connection status: <strong id="constatus"></strong>
+    </div>
+    <div class="alert alert-primary">
+        Receive  Status On The Way Count: <strong id="StatusOnTheWayCount"></strong>
     </div>
 </div>
