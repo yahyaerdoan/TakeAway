@@ -1,7 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
 <h1>@ViewBag.Message1</h1>
 <h1>@ViewBag.Message2</h1>
+@section Scripts{
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <script type="text/javascript">
+                    $(document).ready(() => {
+                        var connection = new signalR.HubConnectionBuilder().withUrl("https://localhost:7189/signalrhub").build();
+                        $("#constatus").text(connection.state);
+                        connection.start().then(() => {
+                            $("#constatus").text(connection.state);
+                        }).catch((error) => { console.log(error) });
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+}
 
+<div class="col-md-8 offset-2">
+    <div class="alert alert-primary">
+        Connection status: <strong id="constatus"></strong>
+    </div>
+</div>
